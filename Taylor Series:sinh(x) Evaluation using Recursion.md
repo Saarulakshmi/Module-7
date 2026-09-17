@@ -23,8 +23,20 @@ To write a Python program to evaluate the value of **sinh(x)** for **n terms** u
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
+def series(x,n):
+    if n==0:
+        return 1
+    else:
+        return x**n+series(x,n-1)
+x=int(input())
+n=int(input())
+print(series(x,n))
+
 
 ## OUTPUT
 
+<img width="947" height="261" alt="image" src="https://github.com/user-attachments/assets/b24a7345-6250-4b1f-ba18-42aac20b6d69" />
+
 ## RESULT
+
+Thus, the program has been successfully executed.
